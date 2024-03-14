@@ -1,0 +1,36 @@
+{{> header}}
+<form action="/contacts" method="get">
+	<label for="search">Search Term</label>
+	<input id="search" name="q" type="search" value="{{search}}">
+	<input type="submit" value="Search">
+</form>
+
+<table>
+	<thead>
+		<tr>
+			<th>First</th>
+			<th>Last</th>
+			<th>Phone</th>
+			<th>Email</th>
+			<th>Actions </th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#contact}}
+		<tr>
+			<td>{{ first }}</td>
+			<td>{{ last }}</td>
+			<td>{{ phone }}</td>
+			<td>{{ email }}</td>
+			<td><a href="/contacts/{{ contact.id }}/edit">Edit</a>
+				<a href="/contacts/{{ contact.id }}">View</a>
+			</td>
+		</tr>
+		{{/contact}}
+		{{^contact}}
+		<tr>
+			<td colspan="5">Sorry! We found nothing that had {{search}}</td>
+		</tr>
+		{{/contact}}
+	</tbody>
+</table>

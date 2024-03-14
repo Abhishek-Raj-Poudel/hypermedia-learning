@@ -1,0 +1,9 @@
+{
+  "scripts":{
+    "start":"node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "mustache-express": "^1.3.2"
+  }
+}
