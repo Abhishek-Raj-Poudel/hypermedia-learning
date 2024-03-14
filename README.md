@@ -4,7 +4,7 @@
 - Further improve my FE and BE skills
 ## Tech Stack
 - For now its just
-    - Express, mustachejs(templating), and HTMX(reactivity)
+    - [Express](https://expressjs.com/), [mustachejs](https://mustache.github.io/)<for templating> , and [HTMX](https://htmx.org/) <for reactivity>
 
 ## Things I will learn form this
 - HTMX
